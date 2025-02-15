@@ -30,8 +30,6 @@ jobs:
         bundle config set path 'vendor/bundle'  # Ensure gems are installed inside vendor/
         bundle install --jobs 4 --retry 3
         bundle info jekyll --path
-        ls -al "$(bundle info jekyll --path)/bin"
-        echo "$(bundle info jekyll --path)/bin" >> $GITHUB_PATH  # Add Jekyll bin directory to PATH
 
     - name: Remove Unwanted Files
       run: rm -rf vendor/ _site/
