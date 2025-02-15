@@ -37,7 +37,7 @@ jobs:
       run: rm -rf vendor/ _site/
 
     - name: Build the Site
-      run: bundle exec jekyll build --destination _site
+      run: jekyll build --destination _site
 
     - name: Deploy to GitHub Pages
       uses: actions/upload-pages-artifact@v3
