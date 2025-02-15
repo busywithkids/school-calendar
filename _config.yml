@@ -21,6 +21,10 @@ plugins:
 
 # Exclude from processing
 exclude:
-  - README.md
+  - vendor
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - .github
+  - .gitignore
+  - .git
