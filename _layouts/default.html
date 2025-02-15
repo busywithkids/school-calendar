@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.default_language }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.school_name }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ site.baseurl }}/{{ page.lang }}/">{{ site.school_name }}</a></h1>
+        <nav>
+            {% for lang in site.languages %}
+                <a href="{{ site.baseurl }}/{{ lang[0] }}/">{{ lang[1] }}</a> |
+            {% endfor %}
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        &copy; {{ site.time | date: "%Y" }} {{ site.school_name }}
+    </footer>
+</body>
+</html>

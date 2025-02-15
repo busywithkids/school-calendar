@@ -1,0 +1,26 @@
+title: "Shared Calendar"
+description: "A simple multi-language school calendar site powered by Jekyll."
+baseurl: "/shared-calendar"
+url: "https://busywithkids.github.io"
+
+# School Settings
+school_name: "Shared Calendar for Schools"
+google_calendar_url: "https://calendar.google.com/calendar/embed?src=example"
+default_language: "en"
+
+# Languages
+languages:
+  en: "English"
+  nl: "Nederlands"
+  fr: "Français"
+
+# Plugins
+plugins:
+  - jekyll-multilingual
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
