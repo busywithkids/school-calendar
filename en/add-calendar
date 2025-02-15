@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Calendar - Example School</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/en/index">Example School</a></h1>
+        <nav>
+            
+                <a href="/en/index">English</a> |
+            
+                <a href="/nl/index">Nederlands</a> |
+            
+                <a href="/fr/index">Français</a> |
+            
+        </nav>
+    </header>
+    <main><h1>How to Add Example School Calendar?</h1>
+<p>Click <a href="https://calendar.google.com/calendar/embed?src=example">here</a> to add the school calendar to your phone.</p></main>
+    <footer>&copy; 2025 Example School</footer>
+</body>
+</html>
