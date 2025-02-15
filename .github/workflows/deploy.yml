@@ -24,8 +24,11 @@ jobs:
         ruby-version: '3.0'
         bundler-cache: true
 
-    - name: Install Jekyll Dependencies
-      run: bundle install
+    - name: Install Jekyll and Dependencies
+      run: |
+        gem install bundler
+        bundle install
+        bundle exec jekyll -v  # Verify Jekyll is installed
 
     - name: Remove Unwanted Files
       run: rm -rf vendor/ _site/
